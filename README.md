@@ -1,1 +1,0 @@
-# drawly-scraper
