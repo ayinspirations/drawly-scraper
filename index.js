@@ -15,10 +15,9 @@ app.post('/scrape-instagram', async (req, res) => {
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
+
     const page = await browser.newPage();
     await page.goto(postUrl, { waitUntil: 'networkidle2' });
-
-    // Warten auf Kommentare
     await page.waitForSelector('ul > li');
 
     const comments = await page.evaluate(() => {
