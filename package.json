@@ -1,7 +1,6 @@
 {
   "name": "drawly-scraper",
   "version": "1.0.0",
-  "description": "Instagram/TikTok Scraper für Drawly",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
